@@ -19,20 +19,24 @@ end
 class Student < Person
 
   def learn
-    return "I get it!"
+    puts "I get it!"
   end
-
 
 end
 
 class Instructor < Person
 
   def teach
-    return "Everything in Ruby is an Object"
+    puts "Everything in Ruby is an Object"
   end
+
+end
 
 nadia = Instructor.new("Nadia")
 nadia.greetings
+nadia.teach
+chris = Student.new("Chris")
+chris.greetings
+chris.learn
 
-
-end
+# Can only instance methods on instances of that same class and all the methods that the methods from the class it has inherited
