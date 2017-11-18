@@ -4,6 +4,10 @@ class Person
     @name = name
   end
 
+  def name #READER METHOD
+    @name
+  end
+
   def greetings
     puts "Hi, my name is #{name}"
   end
@@ -27,6 +31,8 @@ class Instructor < Person
     return "Everything in Ruby is an Object"
   end
 
+nadia = Instructor.new("Nadia")
+nadia.greetings
 
 
 end
